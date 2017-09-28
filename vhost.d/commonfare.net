@@ -1,0 +1,5 @@
+# redirect all cards under each language
+rewrite ^/(en|it|nl|hr)/(cards)/(.*) http://infohub.commonfare.net/$1/$2/$3 permanent;
+
+# redirect all cards without a specific language
+rewrite ^/(cards)/(.*) http://infohub.commonfare.net/$1/$2 permanent;
