@@ -1,0 +1,2 @@
+# redirect all traffic to the non-www domain name
+return 301 $scheme://commonfare.net$request_uri;
