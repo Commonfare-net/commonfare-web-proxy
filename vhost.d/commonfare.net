@@ -3,3 +3,6 @@ rewrite ^/(en|it|nl|hr)/(cards)/(.*) http://infohub.commonfare.net/$1/$2/$3 perm
 
 # redirect all cards without a specific language
 rewrite ^/(cards)/(.*) http://infohub.commonfare.net/$1/$2 permanent;
+
+# allow upload up to 5MB
+client_max_body_size 5m;
