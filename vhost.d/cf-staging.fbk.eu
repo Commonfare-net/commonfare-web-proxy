@@ -1,0 +1,2 @@
+# allow upload up to 5MB
+client_max_body_size 5m;
